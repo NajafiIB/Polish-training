@@ -1,0 +1,48 @@
+{
+  "exam": "Polish B1 ECL preparation",
+  "target_date": null,
+  "current_level": "A2+/B1-",
+  "learner_profile": {
+    "name": "Learner",
+    "timezone": "Europe/Warsaw",
+    "main_goal": "Reach stable B1 speaking, reading, and writing through reusable output samples."
+  },
+  "covered_topics": [
+    "personal introduction",
+    "city and place of living",
+    "work and routine",
+    "free time",
+    "sport",
+    "travel basics"
+  ],
+  "weaknesses": {
+    "cases_endings": "high",
+    "spelling": "high",
+    "verb_forms": "medium-high",
+    "sentence_structure": "medium",
+    "prepositions": "medium-high"
+  },
+  "strong_areas": {
+    "topic_structure": "improving",
+    "basic_vocabulary": "improving",
+    "willingness_to_repeat": "strong"
+  },
+  "known_sentences": [
+    "Mieszkam w średnim mieście.",
+    "Pracuję w firmie finansowej.",
+    "Po pracy lubię się relaksować i pić herbatę.",
+    "W zeszłym miesiącu byłem w górach.",
+    "Dla mnie bardzo ważne jest mieć czas dla siebie i dla rodziny."
+  ],
+  "last_session": {
+    "date": "2026-04-26",
+    "topics": ["city", "work", "free time", "daily routine"],
+    "summary": "Learner practiced a B1-style personal paragraph about living in Poland, work, transport, free time, sport, and bad-weather activities."
+  },
+  "next_session_focus": [
+    "mój/moja/moje",
+    "locative after w",
+    "instrumental for transport",
+    "daily routine paragraph with fewer spelling mistakes"
+  ]
+}
