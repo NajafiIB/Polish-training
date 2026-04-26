@@ -2,12 +2,12 @@ Continue Polish B1 training from this saved state.
 
 Learner: Iman Najafi
 Current estimated level: A2+/B1-
-Goal: stable B1 speaking, reading, and writing for Polish B1/ECL-style preparation.
+Goal: Reach stable B1 speaking, reading, and writing through reusable output samples.
 
 Covered topics:
 - personal introduction
 - city and place of living
-- work and daily routine
+- work and routine
 - free time
 - sport
 - travel basics
@@ -20,14 +20,14 @@ Known reusable sentences:
 - Dla mnie bardzo ważne jest mieć czas dla siebie i dla rodziny.
 
 Main weaknesses:
-- cases/endings, especially after “w”
-- spelling
-- verb forms
-- prepositions
-- possessive agreement: mój/moja/moje
+- cases_endings: high
+- spelling: high
+- verb_forms: medium-high
+- sentence_structure: medium
+- prepositions: medium-high
 
 Today’s focus:
-1. Drill mój/moja/moje.
-2. Drill “w + locative”: w mieście, w pracy, w domu, w firmie.
-3. Build a clean 1-minute B1 speaking answer about city, work, and free time.
-4. Correct strictly and log repeated errors.
+1. mój/moja/moje
+2. locative after w
+3. instrumental for transport
+4. daily routine paragraph with fewer spelling mistakes

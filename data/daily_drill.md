@@ -1,29 +1,44 @@
 # Daily Drill
 
-Generated starter drill based on current repeated errors.
+Generated from repeated errors.
 
-## Translate to Polish
+## Focus categories
 
-1. I live in a medium city.
-2. My city is comfortable to live in.
-3. I work in a financial company.
-4. I go to work by bus.
-5. After work I like to relax.
-6. I go to the gym three times a week.
-7. When the weather is bad, I stay at home.
-8. Last month I was in the mountains.
-9. I was at the seaside.
-10. Sport helps me relax.
+- case: 1
+- preposition_verb: 1
+- reflexive_verb: 1
+- preposition_case: 1
+- gender_agreement: 1
 
-## Polish patterns to repeat
+## Correct these
 
-- w średnim mieście
-- w firmie finansowej
-- od poniedziałku do piątku
-- jadę do pracy autobusem
-- po pracy lubię się relaksować
-- trzy razy w tygodniu
-- zostaję w domu
-- byłem w górach
-- byłem nad morzem
-- pomaga mi się relaksować
+1. Wrong: Mieszkam w średnie miasto
+   Correct: Mieszkam w średnim mieście
+   Rule: w + locative
+
+2. Wrong: idę na praca w autobusem
+   Correct: Jadę do pracy autobusem
+   Rule: jechać do pracy + instrumental transport
+
+3. Wrong: Moj miasto
+   Correct: Moje miasto
+   Rule: miasto is neuter, use moje
+
+4. Wrong: Po pracy lubię relaksować
+   Correct: Po pracy lubię się relaksować
+   Rule: relaksować się
+
+5. Wrong: byłem w morzem
+   Correct: byłem nad morzem
+   Rule: nad + instrumental for location
+
+## Speaking drill
+
+Speak for 60 seconds using these frames:
+
+- Mam na imię…
+- Mieszkam…
+- Pracuję…
+- Po pracy…
+- W weekend…
+- W przyszłości…
