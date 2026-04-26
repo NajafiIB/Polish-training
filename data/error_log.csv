@@ -1,0 +1,6 @@
+date,topic,wrong,correct,category,rule,severity,repeat_count
+2026-04-26,city,"Mieszkam w średnie miasto","Mieszkam w średnim mieście",case,"w + locative",5,3
+2026-04-26,transport,"idę na praca w autobusem","Jadę do pracy autobusem",preposition_verb,"jechać do pracy + instrumental transport",5,2
+2026-04-26,free_time,"Po pracy lubię relaksować","Po pracy lubię się relaksować",reflexive_verb,"relaksować się",4,2
+2026-04-26,travel,"byłem w morzem","byłem nad morzem",preposition_case,"nad + instrumental for location",4,2
+2026-04-26,possessives,"Moj miasto","Moje miasto",gender_agreement,"miasto is neuter, use moje",5,2
