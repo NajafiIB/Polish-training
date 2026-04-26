@@ -1,9 +1,9 @@
 {
-  "exam": "Polish B1 ECL preparation",
+  "exam": "Polish B1 ECL / Polish B1 preparation",
   "target_date": null,
   "current_level": "A2+/B1-",
   "learner_profile": {
-    "name": "Learner",
+    "name": "Iman Najafi",
     "timezone": "Europe/Warsaw",
     "main_goal": "Reach stable B1 speaking, reading, and writing through reusable output samples."
   },
@@ -36,7 +36,12 @@
   ],
   "last_session": {
     "date": "2026-04-26",
-    "topics": ["city", "work", "free time", "daily routine"],
+    "topics": [
+      "city",
+      "work",
+      "free time",
+      "daily routine"
+    ],
     "summary": "Learner practiced a B1-style personal paragraph about living in Poland, work, transport, free time, sport, and bad-weather activities."
   },
   "next_session_focus": [

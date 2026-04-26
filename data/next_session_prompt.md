@@ -1,6 +1,6 @@
 Continue Polish B1 training from this saved state.
 
-Learner: Learner
+Learner: Iman Najafi
 Current estimated level: A2+/B1-
 Goal: stable B1 speaking, reading, and writing for Polish B1/ECL-style preparation.
 

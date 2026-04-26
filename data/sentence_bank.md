@@ -2,7 +2,7 @@
 
 ## Personal introduction
 
-- Mam na imię ... i nazywam się ...
+- Mam na imię Iman i nazywam się Najafi.
 - Od pięciu lat mieszkam w Polsce.
 - Mieszkam w średnim mieście niedaleko Krakowa, na południu Polski.
 
