@@ -16,20 +16,32 @@ The goal is not to save full chats. The goal is to keep a clean learning state t
 - `prompts/end_session_json_schema.md` — JSON format ChatGPT should output at the end of a session.
 - `tracker.py` — CLI to update state, generate prompts, and generate drills.
 
-## Workflow
+## Daily workflow
 
-1. Practice with ChatGPT.
-2. At the end, ask ChatGPT for a session JSON using `prompts/end_session_json_schema.md`.
-3. Save that JSON locally, for example `session_2026-04-26.json`.
-4. Run:
+At the start of a learning session:
 
 ```bash
-python tracker.py add-session session_2026-04-26.json
+git pull
+python tracker.py status
 python tracker.py next-prompt
-python tracker.py drill
 ```
 
-5. Paste `data/next_session_prompt.md` into the next ChatGPT session.
+Then paste `data/next_session_prompt.md` into ChatGPT.
+
+At the end of a learning session:
+
+1. Ask ChatGPT: `Prepare the session JSON for my Polish B1 tracker.`
+2. Save the JSON as `session_YYYY-MM-DD.json`.
+3. Run:
+
+```bash
+python tracker.py add-session session_YYYY-MM-DD.json
+python tracker.py next-prompt
+python tracker.py drill
+git add .
+git commit -m "Add Polish B1 session update"
+git push origin main
+```
 
 ## Commands
 
@@ -39,6 +51,38 @@ python tracker.py next-prompt
 python tracker.py drill
 python tracker.py add-session path/to/session.json
 python -m unittest discover tests
+```
+
+## Windows encoding fix
+
+If Polish characters appear as broken text such as `┼ø`, set the terminal to UTF-8 before reading files:
+
+```bat
+chcp 65001
+type data\next_session_prompt.md
+```
+
+Better options:
+
+- open files in VS Code using UTF-8,
+- use Windows Terminal or PowerShell with UTF-8,
+- avoid copying Polish text from a non-UTF-8 console.
+
+## Issue-based learning workflow
+
+Use GitHub Issues for session planning and backlog, not for raw chat dumps.
+
+Recommended issue types:
+
+- `Session: Day X` — contains one session JSON and learning notes.
+- `Error Pattern` — repeated grammar/spelling problem to drill.
+- `Output Text` — clean speaking or writing text to reuse.
+- `Automation` — engineering task for tracker improvements.
+
+Long-term automation target:
+
+```text
+GitHub Issue with session JSON -> GitHub Action -> tracker.py add-session -> PR with updated data files
 ```
 
 ## Why this beats raw chat memory
