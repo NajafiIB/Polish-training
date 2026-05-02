@@ -1,0 +1,54 @@
+name: Process Polish B1 session issue
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  process-session:
+    if: contains(join(github.event.issue.labels.*.name, ','), 'session-update')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Save issue body
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path('issue_body.md').write_text(os.environ.get('ISSUE_BODY', ''), encoding='utf-8')
+          PY
+
+      - name: Extract session JSON
+        run: python scripts/extract_session_json_from_issue.py issue_body.md session_from_issue.json
+
+      - name: Update tracker data
+        run: |
+          python tracker.py add-session session_from_issue.json
+          python tracker.py next-prompt
+          python tracker.py drill
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: session-update/issue-${{ github.event.issue.number }}
+          title: "Add Polish B1 session update from issue #${{ github.event.issue.number }}"
+          commit-message: "Add Polish B1 session update from issue #${{ github.event.issue.number }}"
+          body: |
+            Automated update from issue #${{ github.event.issue.number }}.
+
+            This PR updates tracker data files from the structured session JSON in the issue body.
+          labels: session-update, automated-pr
