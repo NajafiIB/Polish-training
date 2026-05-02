@@ -9,6 +9,7 @@ Generated from repeated errors.
 - reflexive_verb: 1
 - preposition_case: 1
 - gender_agreement: 1
+- quantifier: 1
 
 ## Correct these
 
@@ -31,6 +32,10 @@ Generated from repeated errors.
 5. Wrong: byłem w morzem
    Correct: byłem nad morzem
    Rule: nad + instrumental for location
+
+6. Wrong: mam wielu pracy
+   Correct: mam dużo pracy
+   Rule: Use dużo with uncountable work/time/money; use wielu with countable plural people/items in selected patterns.
 
 ## Speaking drill
 

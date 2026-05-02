@@ -4,3 +4,4 @@ date,topic,wrong,correct,category,rule,severity,repeat_count
 2026-04-26,free_time,"Po pracy lubię relaksować","Po pracy lubię się relaksować",reflexive_verb,"relaksować się",4,2
 2026-04-26,travel,"byłem w morzem","byłem nad morzem",preposition_case,"nad + instrumental for location",4,2
 2026-04-26,possessives,"Moj miasto","Moje miasto",gender_agreement,"miasto is neuter, use moje",5,2
+2026-05-02,dużo vs wielu; zbyt dużo vs zbyt wielu; z nim vs z nią,mam wielu pracy,mam dużo pracy,quantifier,Use dużo with uncountable work/time/money; use wielu with countable plural people/items in selected patterns.,4,2

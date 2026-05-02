@@ -51,3 +51,15 @@ The learner has useful topic structure and enough vocabulary for a basic B1-styl
 3. Drill `mój/moja/moje` with common nouns: dom, praca, miasto, mieszkanie, rodzina.
 4. Drill locative forms after `w`: w mieście, w domu, w Polsce, w pracy, w firmie.
 5. Drill transport phrases: jadę autobusem, jadę pociągiem, jadę samochodem, idę pieszo.
+
+## 2026-05-02 — Automation test — quantity and genitive
+
+### Topics
+
+- dużo vs wielu
+- zbyt dużo vs zbyt wielu
+- z nim vs z nią
+
+### Notes
+
+Automation test issue created to verify GitHub Action opens a PR from a structured session JSON.

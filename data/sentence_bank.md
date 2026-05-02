@@ -31,3 +31,9 @@
 - W zeszłym miesiącu byłem w górach.
 - Lubię podróżować pociągiem, bo mogę czytać albo odpoczywać.
 - W przyszłości chciałbym częściej podróżować po Polsce.
+
+## Added sentences
+
+- Mam wielu klientów, ale nie mam zbyt dużo czasu.
+- Moja praca jest trudna, ale nie mam z nią wielu problemów.
+- Nie mam zbyt wielu problemów, ale mam dużo pracy.

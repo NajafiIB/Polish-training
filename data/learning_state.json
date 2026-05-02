@@ -8,15 +8,18 @@
     "main_goal": "Reach stable B1 speaking, reading, and writing through reusable output samples."
   },
   "covered_topics": [
-    "personal introduction",
-    "city and place of living",
-    "work and routine",
-    "transport to work",
-    "free time",
-    "sport and gym routine",
     "bad-weather activities",
+    "city and place of living",
+    "dużo vs wielu",
+    "free time",
+    "personal introduction",
+    "sport and gym routine",
+    "transport to work",
     "travel basics: mountains, sea, train",
-    "values: time for yourself and family"
+    "values: time for yourself and family",
+    "work and routine",
+    "z nim vs z nią",
+    "zbyt dużo vs zbyt wielu"
   ],
   "weaknesses": {
     "cases_endings": "high",
@@ -67,22 +70,17 @@
     }
   ],
   "last_session": {
-    "date": "2026-04-26",
+    "date": "2026-05-02",
     "topics": [
-      "city",
-      "work",
-      "free time",
-      "daily routine",
-      "sport",
-      "travel basics"
+      "dużo vs wielu",
+      "zbyt dużo vs zbyt wielu",
+      "z nim vs z nią"
     ],
-    "summary": "Learner practiced a B1-style personal paragraph about living in Poland, work, transport, free time, sport, bad-weather activities, and basic travel."
+    "summary": "Automation test issue created to verify GitHub Action opens a PR from a structured session JSON."
   },
   "next_session_focus": [
-    "mój/moja/moje agreement",
-    "locative after w: w mieście, w domu, w Polsce, w górach",
-    "instrumental for transport: autobusem, pociągiem, samochodem",
-    "daily routine paragraph with fewer spelling mistakes",
-    "turn the core practiced text into a 60–90 second spoken monologue"
+    "dużo vs wielu/wiele",
+    "z nim vs z nią",
+    "spelling of Polish letters"
   ]
 }

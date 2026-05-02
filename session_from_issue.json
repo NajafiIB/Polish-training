@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-02",
+  "session_title": "Automation test — quantity and genitive",
+  "topics": [
+    "dużo vs wielu",
+    "zbyt dużo vs zbyt wielu",
+    "z nim vs z nią"
+  ],
+  "clean_outputs": [
+    {
+      "type": "sentence",
+      "title": "Quantity contrast",
+      "content": "Nie mam zbyt wielu problemów, ale mam dużo pracy."
+    }
+  ],
+  "new_sentences": [
+    "Mam wielu klientów, ale nie mam zbyt dużo czasu.",
+    "Moja praca jest trudna, ale nie mam z nią wielu problemów."
+  ],
+  "errors": [
+    {
+      "wrong": "mam wielu pracy",
+      "correct": "mam dużo pracy",
+      "category": "quantifier",
+      "rule": "Use dużo with uncountable work/time/money; use wielu with countable plural people/items in selected patterns.",
+      "severity": 4,
+      "repeat": true
+    }
+  ],
+  "level_estimate": "A2+/B1-",
+  "next_focus": [
+    "dużo vs wielu/wiele",
+    "z nim vs z nią",
+    "spelling of Polish letters"
+  ],
+  "notes": "Automation test issue created to verify GitHub Action opens a PR from a structured session JSON."
+}
