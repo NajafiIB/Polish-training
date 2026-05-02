@@ -16,6 +16,12 @@ The goal is not to save full chats. The goal is to keep a clean learning state t
 - `prompts/end_session_json_schema.md` — JSON format ChatGPT should output at the end of a session.
 - `tracker.py` — CLI to update state, generate prompts, and generate drills.
 
+## Automation files
+
+- `.github/ISSUE_TEMPLATE/session_update.md` — structured issue template for a learning-session update.
+- `.github/workflows/process-session-issue.yml` — GitHub Action that reads session-update issues and opens a PR with updated tracker files.
+- `scripts/extract_session_json_from_issue.py` — helper script that extracts one fenced JSON block from an issue body.
+
 ## Final B1 goal
 
 Reach stable B1 exam readiness for Polish, with enough control to pass speaking, writing, reading, listening, and core grammar tasks.
@@ -179,6 +185,18 @@ git commit -m "Add Polish B1 session update"
 git push origin main
 ```
 
+## Automated issue-to-PR workflow
+
+Use this when you want GitHub to process a session update from an issue.
+
+1. Create a new issue using the **Polish B1 session update** template.
+2. Keep the `session-update` label on the issue.
+3. Paste exactly one fenced `json` block into the issue body.
+4. The GitHub Action extracts the JSON, runs the tracker, and opens a PR with updated data files.
+5. Review and merge the PR.
+
+The automation intentionally opens a PR instead of pushing directly to `main`.
+
 ## Commands
 
 ```bash
@@ -186,6 +204,7 @@ python tracker.py status
 python tracker.py next-prompt
 python tracker.py drill
 python tracker.py add-session path/to/session.json
+python tracker.py windows-help
 python -m unittest discover tests
 ```
 
@@ -215,7 +234,7 @@ Recommended issue types:
 - `Output Text` — clean speaking or writing text to reuse.
 - `Automation` — repo/tooling improvement.
 
-Long-term automation target:
+Implemented automation target:
 
 ```text
 GitHub Issue with session JSON -> GitHub Action -> tracker.py add-session -> PR with updated data files
