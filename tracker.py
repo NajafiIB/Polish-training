@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import sys
 from collections import Counter
 from dataclasses import dataclass
 from datetime import date
@@ -46,6 +47,22 @@ class TrackerError:
     rule: str
     severity: int = 3
     repeat_count: int = 1
+
+
+def warn_if_windows_encoding() -> None:
+    if sys.platform.startswith("win"):
+        try:
+            if sys.stdout.encoding.lower() != "utf-8":
+                print("WARNING: Your terminal is not UTF-8. Polish characters may break.")
+                print("Run: chcp 65001")
+        except Exception:
+            pass
+
+
+def windows_help() -> None:
+    print("Windows UTF-8 fix:")
+    print("chcp 65001")
+    print("Then reopen your terminal or use Windows Terminal / VS Code.")
 
 
 def load_state() -> dict[str, Any]:
@@ -149,6 +166,7 @@ def add_session(session_path: Path) -> None:
 
 
 def generate_next_prompt() -> str:
+    warn_if_windows_encoding()
     state = load_state()
     sentences = state.get("known_sentences", [])
     prompt = [
@@ -234,6 +252,7 @@ def main() -> None:
     sub.add_parser("next-prompt", help="Generate next session prompt")
     sub.add_parser("drill", help="Generate daily drill")
     sub.add_parser("status", help="Print current learning state")
+    sub.add_parser("windows-help", help="Show Windows UTF-8 fix")
     args = parser.parse_args()
 
     if args.command == "add-session":
@@ -244,6 +263,8 @@ def main() -> None:
         print(generate_drill())
     elif args.command == "status":
         print_status()
+    elif args.command == "windows-help":
+        windows_help()
 
 
 if __name__ == "__main__":
