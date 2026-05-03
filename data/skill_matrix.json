@@ -1,0 +1,63 @@
+{
+  "exam": "Polish B1 ECL",
+  "current_level": "A2+/B1-",
+  "overall_readiness": "10-15%",
+  "skills": {
+    "speaking_self_intro": {
+      "status": "weak_but_improving",
+      "target": "stable 2-3 minute self-introduction",
+      "priority": "critical"
+    },
+    "speaking_dialogue": {
+      "status": "untested",
+      "target": "handle role-play situations with questions, opinions, suggestions, and agreement",
+      "priority": "high"
+    },
+    "speaking_image_comparison": {
+      "status": "untested",
+      "target": "describe and compare images using one reusable structure",
+      "priority": "high"
+    },
+    "writing": {
+      "status": "weak",
+      "target": "two guided 90-110 word texts",
+      "priority": "critical"
+    },
+    "reading": {
+      "status": "untested",
+      "target": "skim, scan, and answer from text only",
+      "priority": "medium"
+    },
+    "listening": {
+      "status": "untested",
+      "target": "catch keywords, numbers, negation, and short answers",
+      "priority": "medium"
+    },
+    "grammar": {
+      "status": "unstable",
+      "target": "errors do not block meaning",
+      "priority": "critical"
+    },
+    "vocabulary": {
+      "status": "improving",
+      "target": "high-frequency B1 topic vocabulary",
+      "priority": "high"
+    }
+  },
+  "red_zone_errors": [
+    "Polish spelling: ż/rz/ó/u/ą/ę/ń/ć/ś/ł",
+    "gender agreement: mój/moja/moje",
+    "adjective agreement: duży/duża/duże",
+    "genitive after dużo/nie mam/niedaleko",
+    "locative after w",
+    "Czech/Slovak interference during speech"
+  ],
+  "current_training_priority": [
+    "Core self-introduction",
+    "Grammar inside core intro",
+    "Dialogue framework",
+    "Image comparison framework",
+    "Writing templates",
+    "Reading/listening strategy"
+  ]
+}
